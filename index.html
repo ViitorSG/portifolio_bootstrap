@@ -14,6 +14,7 @@
 <body>
 
 <header>
+    <div id="home"></div>
     <div class="container" id="nav-container">
         <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="navbar">
             <a class="navbar-brand" href="index.html">
@@ -26,11 +27,13 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="#" id="home-menu">Home</a>
-                    <a class="nav-item nav-link" href="#" id="about-menu">A agência</a>
-                    <a class="nav-item nav-link" href="#" id="services-menu" onclick="scrollToIdSmoothly('services')">Serviços</a>
-                    <a class="nav-item nav-link" href="#" id="portfolio-menu">Projetos</a>
-                    <a class="nav-item nav-link" href="#" id="contact-menu" onclick="scrollToIdSmoothly('contact')">Contato</a>
+                    <a class="nav-item nav-link cursorPoint" id="home-menu"
+                       onclick="scrollToIdSmoothly('home')">Home</a>
+                    <a class="nav-item nav-link cursorPoint" id="services-menu"
+                       onclick="scrollToIdSmoothly('services')">Serviços</a>
+                    <a class="nav-item nav-link cursorPoint" id="portfolio-menu" onclick="scrollToIdSmoothly('app')">Projetos</a>
+                    <a class="nav-item nav-link cursorPoint" id="contact-menu"
+                       onclick="scrollToIdSmoothly('contactUs')">Contato</a>
                 </div>
             </div>
         </nav>
@@ -39,7 +42,7 @@
 
 <main role="main">
 
-    <div class="carousel slide" data-ride="carousel" id="myCarousel">
+    <div class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
             <li data-slide-to="1" data-target="#myCarousel"></li>
@@ -72,7 +75,7 @@
                         <h1>Desenvolvimento de Apps</h1>
                         <p>Combinamos criatividade, habilidades técnicas e uma abordagem centrada no usuário para criar
                             aplicativos intuitivos e funcionais. Trabalhamos de perto com nossos clientes, entendendo
-                            suas necessidades e transformando suas ideias em realidade..</p>
+                            suas necessidades e transformando suas ideias em realidade.</p>
                         <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
                     </div>
                 </div>
@@ -109,8 +112,9 @@
         </a>
     </div>
 
+    <div id="services"></div>
     <div class="container marketing">
-        <div class="row" id="services">
+        <div class="row">
             <div class="col-lg-4">
                 <img alt="Generic placeholder image" class="rounded-circle"
                      height="140" src="assets/ic_python.svg" width="140">
@@ -129,9 +133,10 @@
                      src="assets/ic_flutter.svg"
                      width="140">
                 <h2>Flutter</h2>
-                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
-                    mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                    condimentum nibh.</p>
+                <p>Flutter é uma plataforma de desenvolvimento de aplicativos móveis que permite a criação de
+                    aplicativos multiplataforma com aparência nativa e alto desempenho. Com Flutter, você pode
+                    desenvolver um único aplicativo que funciona tanto em dispositivos Android quanto iOS, economizando
+                    tempo e recursos de desenvolvimento.</p>
                 <p><a class="btn btn-secondary" onclick="scrollToIdSmoothly('app')" role="button">Ver mais &raquo;</a>
                 </p>
             </div><!-- /.col-lg-4 -->
@@ -142,9 +147,9 @@
                      src="assets/ic_react.svg"
                      width="140">
                 <h2>React</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula
-                    porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
-                    ut fermentum massa justo sit amet risus.</p>
+                <p>Se você está procurando construir um site com uma interface de usuário rica e responsiva, o React é
+                    uma escolha excelente. Sua flexibilidade, eficiência e ampla adoção na indústria o tornam uma
+                    ferramenta poderosa para o desenvolvimento web moderno.</p>
                 <p><a class="btn btn-secondary" onclick="scrollToIdSmoothly('site')" role="button">Ver mais &raquo;</a>
                 </p>
             </div>
@@ -156,9 +161,9 @@
             <div class="col-md-7">
                 <h2 class="featurette-heading">Back end de <span class="text-muted">nossas aplicações é em Python</span>
                 </h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                    euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-                    tellus ac cursus commodo.</p>
+                <p class="lead">Python é uma linguagem popular, versátil e fácil de aprender. Usada para web, análise de
+                    dados e
+                    automação, tem sintaxe clara e vasta biblioteca.</p>
             </div>
             <div class="col-md-5">
                 <img alt="Generic placeholder image" class="featurette-image img-fluid mx-auto"
@@ -171,9 +176,9 @@
         <div class="row featurette">
             <div class="col-md-7 order-md-2">
                 <h2 class="featurette-heading">Seu site <span class="text-muted">feito em react</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                    euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-                    tellus ac cursus commodo.</p>
+                <p class="lead">Se você está procurando construir um site com uma interface de usuário rica e
+                    responsiva, o React é uma escolha excelente. Sua flexibilidade, eficiência e ampla adoção na
+                    indústria o tornam uma ferramenta poderosa para o desenvolvimento web moderno..</p>
             </div>
             <div class="col-md-5 order-md-1">
                 <img alt="Generic placeholder image" class="featurette-image img-fluid mx-auto"
@@ -185,9 +190,11 @@
             <div class="col-md-7">
                 <h2 class="featurette-heading">Seu aplicativo <span class="text-muted">feito em Flutter!</span>
                 </h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                    euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-                    tellus ac cursus commodo.</p>
+                <p class="lead">Flutter é uma plataforma de desenvolvimento de aplicativos móveis que permite a criação
+                    de
+                    aplicativos multiplataforma com aparência nativa e alto desempenho. Com Flutter, você pode
+                    desenvolver um único aplicativo que funciona tanto em dispositivos Android quanto iOS, economizando
+                    tempo e recursos de desenvolvimento.</p>
             </div>
             <div class="col-md-5">
                 <img alt="Generic placeholder image" class="featurette-image img-fluid mx-auto"
@@ -290,10 +297,11 @@
                 class="icon ion-social-linkedin"></i></a><a href="#"><i class="icon ion-social-github"></i></a><a
                 href="#"><i class="icon ion-social-facebook"></i></a></div>
         <ul class="list-inline">
-            <li class="list-inline-item"><a href="#">Home</a></li>
-            <li class="list-inline-item"><a href="" onclick="scrollToIdSmoothly('services')">Serviços</a></li>
-            <li class="list-inline-item"><a href="" onclick="scrollToIdSmoothly('contactUs')">Entre em contato</a></li>
-            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            <li class="list-inline-item cursorPoint"><a onclick="scrollToIdSmoothly('home')">Home</a></li>
+            <li class="list-inline-item cursorPoint"><a onclick="scrollToIdSmoothly('services')">Serviços</a></li>
+            <li class="list-inline-item cursorPoint"><a onclick="scrollToIdSmoothly('contactUs')">Entre em contato</a>
+            </li>
+            <li class="list-inline-item cursorPoint"><a>Privacy Policy</a></li>
         </ul>
         <p class="copyright">VG Software © 2023</p>
     </footer>

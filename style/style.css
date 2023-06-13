@@ -175,3 +175,6 @@ header, .navbar {
     margin-bottom:0;
 }
 
+.cursorPoint {
+    cursor: pointer;
+}
